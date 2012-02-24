@@ -55,26 +55,12 @@ public class OrthodonticModelRuler extends javax.swing.JFrame
 		}
 	}
 
-	private JMenuItem helpMenuItem;
-	private JMenu jMenu5;
 	private MyItemListTable myItemListTable;
 	private MyImagePane jImagePane;
 	private JScrollPane jScrollPane1;
 	private JPanel jItemListPane;
 	private JSplitPane jMainSplitPane;
-	private JMenuItem deleteMenuItem;
-	private JSeparator jSeparator1;
-	private JMenuItem pasteMenuItem;
-	private JMenuItem copyMenuItem;
-	private JMenuItem cutMenuItem;
-	private JMenu jMenu4;
-	private JMenuItem exitMenuItem;
-	private JSeparator jSeparator2;
-	private JMenuItem closeFileMenuItem;
-	private JMenuItem saveAsMenuItem;
-	private JMenuItem saveMenuItem;
 	private JMenuItem openFileMenuItem;
-	private JMenuItem newFileMenuItem;
 	private JMenu jMenu3;
 	private JMenuBar jMenuBar1;
 
@@ -204,18 +190,6 @@ public class OrthodonticModelRuler extends javax.swing.JFrame
 					jMenuBar1.add(jMenu3);
 					jMenu3.setText("File");
 					{
-						newFileMenuItem = new JMenuItem();
-						jMenu3.add(newFileMenuItem);
-						newFileMenuItem.setText("New");
-						newFileMenuItem.addActionListener(new ActionListener()
-						{
-							public void actionPerformed(ActionEvent evt)
-							{
-								newFileMenuItemActionPerformed(evt);
-							}
-						});
-					}
-					{
 						openFileMenuItem = new JMenuItem();
 						jMenu3.add(openFileMenuItem);
 						openFileMenuItem.setText("Open");
@@ -226,97 +200,6 @@ public class OrthodonticModelRuler extends javax.swing.JFrame
 								openFileMenuItemActionPerformed(evt);
 							}
 						});
-					}
-					{
-						saveMenuItem = new JMenuItem();
-						jMenu3.add(saveMenuItem);
-						saveMenuItem.setText("Save");
-						saveMenuItem.addActionListener(new ActionListener()
-						{
-							public void actionPerformed(ActionEvent evt)
-							{
-								saveMenuItemActionPerformed(evt);
-							}
-						});
-					}
-					{
-						saveAsMenuItem = new JMenuItem();
-						jMenu3.add(saveAsMenuItem);
-						saveAsMenuItem.setText("Save As ...");
-						saveAsMenuItem.addActionListener(new ActionListener()
-						{
-							public void actionPerformed(ActionEvent evt)
-							{
-								saveAsMenuItemActionPerformed(evt);
-							}
-						});
-					}
-					{
-						closeFileMenuItem = new JMenuItem();
-						jMenu3.add(closeFileMenuItem);
-						closeFileMenuItem.setText("Close");
-						closeFileMenuItem.addActionListener(new ActionListener()
-						{
-							public void actionPerformed(ActionEvent evt)
-							{
-								closeFileMenuItemActionPerformed(evt);
-							}
-						});
-					}
-					{
-						jSeparator2 = new JSeparator();
-						jMenu3.add(jSeparator2);
-					}
-					{
-						exitMenuItem = new JMenuItem();
-						jMenu3.add(exitMenuItem);
-						exitMenuItem.setText("Exit");
-						exitMenuItem.addActionListener(new ActionListener()
-						{
-							public void actionPerformed(ActionEvent evt)
-							{
-								exitMenuItemActionPerformed(evt);
-							}
-						});
-					}
-				}
-				{
-					jMenu4 = new JMenu();
-					jMenuBar1.add(jMenu4);
-					jMenu4.setText("Edit");
-					{
-						cutMenuItem = new JMenuItem();
-						jMenu4.add(cutMenuItem);
-						cutMenuItem.setText("Cut");
-					}
-					{
-						copyMenuItem = new JMenuItem();
-						jMenu4.add(copyMenuItem);
-						copyMenuItem.setText("Copy");
-					}
-					{
-						pasteMenuItem = new JMenuItem();
-						jMenu4.add(pasteMenuItem);
-						pasteMenuItem.setText("Paste");
-					}
-					{
-						jSeparator1 = new JSeparator();
-						jMenu4.add(jSeparator1);
-					}
-					{
-						deleteMenuItem = new JMenuItem();
-						jMenu4.add(deleteMenuItem);
-						deleteMenuItem.setText("Delete");
-					}
-				}
-				{
-					jMenu5 = new JMenu();
-					jMenuBar1.add(jMenu5);
-					jMenu5.setText("Help");
-					{
-						helpMenuItem = new JMenuItem();
-						jMenu5.add(helpMenuItem);
-						helpMenuItem.setText("Help");
 					}
 				}
 			}
